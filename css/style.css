@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Anton&family=Bebas+Neue&family=Courgette&family=Dongle:wght@700&family=Fira+Sans&family=Francois+One&family=IBM+Plex+Mono&family=Lobster&family=Qwitcher+Grypen:wght@700&family=Roboto+Slab:wght@400;500;600&family=Rubik:wght@400;600&family=Varela+Round&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', cursive;
+}
+body{
+    max-width: 1600px;
+    background-color: rgb(233, 233, 233);
+    margin: 0 auto;
+}
+#home{
+    background-image: url(/image/home.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+
+
+#home .navegation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(124, 119, 119);
+    height: 100px;
+    position: relative;
+    box-shadow: 0 0 10px 1px;
+    border-radius: 0 0 5px 5px;
+    background-image: url(/image/home.jpg);
+}
+#home .navegation .logo{
+    margin-left: 7%;
+}
+#home .navegation .logo h1{
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-family: 'Courgette', cursive;
+    color: white;
+}
+#home .navegation .logo span{
+    color: rgb(255, 0, 149);
+    font-size: 40px;
+    font-weight: 800;
+    font-family: 'Courgette', cursive;
+}
+#home .navegation .menu{
+    margin: 0 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#home .navegation .menu li{
+    list-style-type: none;
+}
+#home .navegation .menu a{
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 550;
+    color: rgb(255, 255, 255);
+    padding:36px 30px;
+    transition: all 0.3s ease;
+}
+#home .navegation .menu a:hover{
+    color: rgb(255, 0, 149);
+    background-color: rgb(219, 219, 219);
+}
+
+/*=================Finish navigation bar=====================*/
+
+/*===============stert continer home===================*/
+#home .continer{
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    text-align: center;
+    width: 400px;
+}
+#home .continer h2{
+    font-size: 45px;
+    color: transparent;
+    position: relative;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    margin-right: 50px;
+    display: inline-block;
+    animation: color-type 2s ease forwards;
+    animation-delay: 2s;
+}
+#home .continer h2 span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: rgb(255, 60, 174);
+    animation: typing 3s ease forwards;
+    animation-delay: 1s;
+}
+
+/*=================animation setting===============*/
+
+#home .continer h2:nth-child(1){
+    animation-delay: 1.8s;
+}
+#home .continer h2:nth-child(2){
+    animation-delay: 4.5s;
+}
+#home .continer h2:nth-child(3){
+    animation-delay: 7.5s;
+}
+
+#home .continer h2:nth-child(1) span{
+    animation-delay: 0.5s;
+}
+#home .continer h2:nth-child(2) span{
+    animation-delay: 3s;
+}
+#home .continer h2:nth-child(3) span{
+    animation-delay: 6s;
+}
+
+@keyframes typing{
+    50%{
+        width: 100%;
+        left: 0;
+    }
+    100%{
+        width: 0;
+        left: 100%;
+    }
+}
+@keyframes color-type{
+    to{
+        color: rgb(253, 253, 253);
+    }
+}
+/*=================== finish animation setting=============*/
