@@ -1,15 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Acme&family=Anton&family=Bebas+Neue&family=Courgette&family=Dongle:wght@700&family=Fira+Sans&family=Francois+One&family=IBM+Plex+Mono&family=Lobster&family=Qwitcher+Grypen:wght@700&family=Roboto+Slab:wght@400;500;600&family=Rubik:wght@400;600&family=Varela+Round&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,400;1,100&display=swap');
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Bebas Neue', cursive;
+ 
+   
 }
 body{
+    font-size: 10px;
     max-width: 1600px;
     background-color: rgb(233, 233, 233);
     margin: 0 auto;
+}
+
+.section-title {
+    font-size: 3.5rem;
+    color: rgb(177, 161, 161);
+    letter-spacing: .4rem;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+.section-title span {
+    color: tomato;
 }
 #home{
     background-image: url(/image/home.jpg);
@@ -17,6 +30,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     object-fit: cover;
+    font-family: 'Bebas Neue', cursive
 }
 
 
@@ -122,6 +136,66 @@ body{
 #home .continer h2:nth-child(3) span{
     animation-delay: 6s;
 }
+/*Start Service Section*/
+
+#services .services{
+    max-width: 1500px;
+    margin: auto;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+#services .service-top{
+    width: 60%;
+    margin: auto;
+}
+#services .service-top p{
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+#services .service-bottom{
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+   
+}
+#services .services .service-item{
+     background-color: pink;
+     margin: 5px;
+     width: 24%;
+     text-align: left;
+     padding-left: 5px;
+     border-radius: 6px;
+     color:#fff;
+     background-image: url(/image/Build\ software\ better\,\ together.jpg);
+     padding: 10px;
+     z-index: 0;
+     position: relative;
+}
+#services  .services .service-item::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .7;
+    z-index: -1;
+    border-radius: 10px;
+}
+#services .service-item h2{
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+#services .service-item p{
+    font-size: 1rem;
+    line-height: 25px;
+   
+}
+/*End Service Section*/
 
 @keyframes typing{
     50%{
