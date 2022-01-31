@@ -319,7 +319,7 @@ body{
     width: 28%;
     height: 360px;
     position: relative;
-    border: 10px solid rgb(233, 233, 233);
+    border: 10px solid rgb(91, 131, 156);
 }
 #about .about .col-left::after{
     position: absolute;
@@ -328,7 +328,7 @@ body{
     height: 100%;
     top: 10px;
     left: -35px;
-    border: 10px solid #000;
+    border: 10px solid rgb(5, 37, 56);
     z-index: -1;
 }
 
