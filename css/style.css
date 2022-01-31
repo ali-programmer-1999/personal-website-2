@@ -1,18 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Acme&family=Anton&family=Bebas+Neue&family=Courgette&family=Dongle:wght@700&family=Fira+Sans&family=Francois+One&family=IBM+Plex+Mono&family=Lobster&family=Qwitcher+Grypen:wght@700&family=Roboto+Slab:wght@400;500;600&family=Rubik:wght@400;600&family=Varela+Round&display=swap');
-
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Francois One', sans-serif;
 }
 body{
+    font-size: 10px;
     max-width: 1600px;
     background-color: rgb(250, 250, 250);
     margin: 0 auto;
     background-image: linear-gradient(80deg, rgb(15, 67, 95) 0%,rgb(158, 136, 163)100%);
-    opacity: 1;
-    
+    opacity: 1;   
+}
+
+.section-title {
+    font-size: 3.5rem;
+    color: rgb(0, 0, 0);
+    letter-spacing: .4rem;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+.section-title span {
+    color: rgb(255, 60, 174);
+}
+/* از این باتن میتونی ب صورت پیش فرض در متکن هایی که میخوای میتونی استفاده کنی  و کد خوانا تر بشه */
+.btn{
+    font-family: 'Roboto', sans-serif;
+    padding: 12px 20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    font-size: 1.3rem;
+    border-radius: 3px;
+    border: 3px solid rgb(255, 60, 174);
+    transition: all .5s ease-in-out;
+}
+/* پایان باتن */
+.btn:hover{
+    background-color:rgb(255, 60, 174);
+    color: rgb(0, 0, 0);
 }
 #home{
     background-image: url(/image/home.jpg);
@@ -21,6 +48,7 @@ body{
     background-size: cover;
     object-fit: cover;
     box-shadow: 5px 5px 10px;
+    font-family: 'Bebas Neue', cursive
 }
 #home .navegation{
     display: flex;
@@ -28,10 +56,12 @@ body{
     align-items: center;
     background-color: rgb(124, 119, 119);
     height: 100px;
-    position: relative;
+    width: 100%;
+    position: fixed;
     box-shadow: 0 0 10px 1px;
     border-radius: 0 0 5px 5px;
     background-image: url(/image/home.jpg);
+    z-index: 10;
 }
 #home .navegation .logo{
     margin-left: 7%;
@@ -76,9 +106,9 @@ body{
 #home .continer{
     position: absolute;
     top: 40%;
-    left: 15%;
+    left: 10%;
     text-align: center;
-    width: 400px;
+    width: 520px;
 }
 #home .continer h2{
     font-size: 45px;
@@ -112,6 +142,7 @@ body{
 }
 #home .continer h2:nth-child(3){
     animation-delay: 7.5s;
+    margin-left: -5px;
 }
 
 #home .continer h2:nth-child(1) span{
@@ -123,25 +154,71 @@ body{
 #home .continer h2:nth-child(3) span{
     animation-delay: 6s;
 }
+/*Start Service Section*/
 
-@keyframes typing{
-    50%{
-        width: 100%;
-        left: 0;
-    }
-    100%{
-        width: 0;
-        left: 100%;
-    }
+#services .services{
+    max-width: 1500px;
+    margin: auto;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
 }
-@keyframes color-type{
-    to{
-        color: rgb(253, 253, 253);
-    }
+#services .service-top{
+    width: 60%;
+    margin: auto;
 }
-/*=================== finish animation setting=============*/
-
-
+#services .service-top p{
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    letter-spacing: .15rem;
+    font-weight: 500;
+    margin-bottom: 3rem;
+}
+#services .service-bottom{
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+   
+}
+#services .services .service-item{
+     background-color: pink;
+     margin: 5px;
+     width: 24%;
+     text-align: left;
+     padding-left: 5px;
+     border-radius: 6px;
+     color:rgb(0, 0, 0);
+     background-image: url(/image/Build\ software\ better\,\ together.jpg);
+     padding: 10px;
+     z-index: 0;
+     position: relative;
+}
+#services  .services .service-item::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .7;
+    z-index: -1;
+    border-radius: 10px;
+}
+#services .service-item h2{
+    font-weight: bold;
+    padding-bottom: 1rem;
+    color: white;
+}
+#services .service-item p{
+    font-size: 1rem;
+    line-height: 25px;
+   color: white;
+}
+/*End Service Section*/
 /*=================== start section PROJECT =============*/
 #project .project-continer{
     width: 1200px;
@@ -152,18 +229,6 @@ body{
     align-items: center;
     padding: 50px 0;
 }
-#project .project-continer .label h1{
-    text-align: center;
-    margin: 40px 20px 0;
-    font-size: 55px;
-    letter-spacing: 2px;
-    font-weight: 700;
-}
-#project .label h1 span{
-    color: rgb(255, 0, 149);
-}
-
-/* ====continer====*/
 #project .project-continer .cards{
     display: flex;
     justify-content: center;
@@ -232,3 +297,83 @@ body{
 }
 /*=================== END section PROJECT =============*/
 
+
+/* Start About section */
+#about{
+    height: 100vh;
+}
+#about .about{
+    font-family: 'Roboto', sans-serif;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0 100px;
+}
+#about .about-bottom{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+}
+#about .col-left{
+    width: 28%;
+    height: 360px;
+    position: relative;
+    border: 10px solid rgb(233, 233, 233);
+}
+#about .about .col-left::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 10px;
+    left: -35px;
+    border: 10px solid #000;
+    z-index: -1;
+}
+
+#about .col-right{
+    width: 72%;
+    height: auto;
+    font-size: 1.2rem;
+    text-align: left;
+    padding: 2rem;
+}
+#about .col-right h2{
+    margin-bottom: 2rem;
+    font-weight: 700;
+    color: white;
+}
+#about .col-right h2 span{
+    color: rgb(255, 60, 174);
+    font-weight: bold;
+}
+#about .col-right p{
+    font-size: 1.2rem;
+    line-height: 2rem;
+    letter-spacing: .15rem;
+    font-weight: 500;
+    margin-bottom: 3rem;
+}
+#about img{
+    width: 100%;
+    height: 100%;
+}
+/* End About section */
+
+@keyframes typing{
+    50%{
+        width: 100%;
+        left: 0;
+    }
+    100%{
+        width: 0;
+        left: 100%;
+    }
+}
+@keyframes color-type{
+    to{
+        color: rgb(253, 253, 253);
+    }
+}
+/*=================== finish animation setting=============*/
