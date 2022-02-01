@@ -8,12 +8,9 @@
 }
 body{
     font-size: 10px;
-    max-width: 1600px;
     background-color: rgb(250, 250, 250);
-    margin: 0 auto;
     background-image: linear-gradient(80deg, rgb(15, 67, 95) 0%,rgb(158, 136, 163)100%);
     opacity: 1;  
-
 }
 
 .section-title {
@@ -222,6 +219,9 @@ body{
 }
 /*==================== End Service Section ================*/
 /*=================== start section PROJECT =============*/
+#project{
+    width: 100%;
+}
 #project .project-continer{
     width: 1200px;
     margin: 0 auto;

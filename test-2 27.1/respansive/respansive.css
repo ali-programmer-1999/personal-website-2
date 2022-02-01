@@ -1,0 +1,65 @@
+@media screen and (min-width : 992px){
+    #home .menu-respansive{
+        display: none;
+    }
+}
+/*------tablet and small device form 992-----*/
+@media screen and (max-width : 992px) { 
+    #home .navegation{
+        display: none;
+    }
+    #home{
+        width: 100%;
+    }
+    #home .respansive-bar{
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 30%;
+        background-image: linear-gradient(80deg, rgb(23, 105, 153) 0%,rgb(172, 121, 184)100%);
+    }
+    #home .respansive-bar .logo-respansive{
+        margin: 25px auto;
+    }
+    #home .respansive-bar .logo-respansive h1{
+        font-size: 30px;
+        letter-spacing: 2px;
+        color: white;
+    }
+    #home .respansive-bar .logo-respansive span{
+        color: rgb(255, 0, 149);
+        font-size: 40px;
+        font-weight: 800;
+    }
+    #home .menu-respansive{
+        position: relative;
+        height: 100%;
+        width: 100%;
+        list-style: none;
+    }
+    #home .menu-respansive li{
+        list-style-type: none;
+        
+        line-height: 60px;
+        border-top: 1px solid rgba(255,255,255,0.4);
+        border-bottom: 1px solid rgba(53, 51, 51, 0.4);
+    }
+    #home .menu-respansive a{
+       text-decoration: none;
+       color: white;
+       font-size: 23px;
+       padding-left: 60px;
+       letter-spacing: 2px;
+       font-weight: 600;
+       height: 100%;
+       width: 100%;
+       display: block;
+       transition: all 0.3s ease;
+    }
+    #home .menu-respansive a:hover{
+        box-shadow: 10px 10px 20px #222;
+    }
+    #home
+
+}
