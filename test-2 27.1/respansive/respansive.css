@@ -3,12 +3,102 @@
         display: none;
     }
 }
+/* Start  Mobile */
+@media screen and (max-width : 576px){
+    #home .continer{
+        position: absolute;
+        top: 40%;
+        left: 0;
+        text-align: center;
+        width: 520px;
+    }
+    #services .service-top{
+        width: 85%;
+        margin: auto;
+    }
+    #services .service-top p{
+        text-align: justify;
+       
+    }
+    #services .service-bottom{
+        font-size: 1.2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+       
+    }
+    #services .services .service-item{
+        width: 85%;
+        margin-top: 5rem;
+   }
+   #project .project-continer{
+    width: 0;
+}
+   #project .project-continer .cards .box{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+    width: 150%;
+    flex-direction: column;
+    margin-top: 100px;
+    border-radius: 10px;
+    }
+    #project .project-continer .cards .box:nth-child(even){
+        flex-direction: column;
+    }
+    #project .project-continer .cards .revers{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        height: 100%;
+        width: 150%;
+        flex-direction: column;
+        margin-top: 100px;
+        border-radius: 10px;
+    }
+  
+    #about .about{
+        width: 100%;
+        margin: 0 auto;
+        padding: 50px 0;
+    }
+  
+    #about .about-bottom{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    #about .col-left{
+        width: 60%;
+        height: 360px;
+        margin-bottom: 4rem;
+       
+    }
+    #contact .contact-continer .all-box{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+    #contact .contact-continer .contact-box{
+      margin: 3rem 0;
+    }
+}
+/* End  Mobile */
+
 /*------tablet and small device form 992-----*/
+
 @media screen and (max-width : 992px) { 
     #home .navegation{
         display: none;
     }
-    #home{
+    /* #home{
         width: 100%;
     }
     #home .respansive-bar{
@@ -60,6 +150,6 @@
     #home .menu-respansive a:hover{
         box-shadow: 10px 10px 20px #222;
     }
-    #home
+    #home */
 
 }
