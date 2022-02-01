@@ -6,12 +6,12 @@
 /*------tablet and small device form 992-----*/
 @media screen and (max-width : 992px) { 
     /*======navgation setting start=======*/
-    
     #home .navegation{
         display: none;
     }
     #home{
         overflow: hidden;
+        width: 100%;
     }
     #home .respansive-bar {
         position: relative;
@@ -130,6 +130,7 @@
     #home .continer{
         left: 23%;
         top: 24%;
+        width: 50%
     }
 
 /*======navgation setting end=======*/
@@ -159,6 +160,9 @@
 /*======service setting end=======*/
 
 /*======project setting start=======*/
+    #project{
+        width: 100%;
+    }
     #project .project-continer {
         max-width: 80%;
         margin: 0 auto;
@@ -188,6 +192,12 @@
         width: 100%;
         cursor:pointer;
     }
+    #project .project-continer .cards .box .image-project img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
     #project .project-continer .cards .box .text{
         padding:14px;
         display: flex;
@@ -208,6 +218,7 @@
     /*======about setting start=======*/
         #about{
             height: 150vh;
+            width: 100%;
         }
         #about .about{
             width: 80%;
@@ -226,8 +237,12 @@
         #about .col-left{
             width: 50%;
             margin: 0 auto;
-            height: 300px;
+            height: 400px;
         }
+        #about .col-left img{
+            object-fit: cover;
+        }
+
         #about .col-right{
             width: 72%;
             margin: auto;
@@ -242,7 +257,7 @@
     #contact{
         width: 100%;
         height: 100%;
-        margin-top: -15%;
+        margin-top: -3%;
         margin-bottom: 15%;
     }
     #contact .contact-continer{
@@ -266,10 +281,17 @@
         transition: all 0.3s ease;
         cursor: pointer;
       }
+    #contact .contact-continer .contact-box h3{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
       #contact .contact-continer .contact-box:hover{
         width: 47%;
         height: 190px;
     }
+
         /*======content setting end=======*/
 
         #footer .social-item,.text-h2{
