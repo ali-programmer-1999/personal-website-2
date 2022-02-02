@@ -19,6 +19,7 @@ body{
     letter-spacing: .4rem;
     margin-top: 5rem;
     margin-bottom: 3rem;
+    text-align: center;
 }
 .section-title span {
     color: rgb(255, 60, 174);
@@ -214,8 +215,8 @@ body{
 }
 #services .service-item p{
     font-size: 1rem;
-    line-height: 25px;
-   color: white;
+    line-height: 2.5rem;
+    color: white;
 }
 /*==================== End Service Section ================*/
 /*=================== start section PROJECT =============*/

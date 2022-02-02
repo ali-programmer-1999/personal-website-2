@@ -30,6 +30,7 @@
         overflow: hidden;
         left: -250px;
         transition: all 0.4s ease;
+        /* display: none; */
     }
     #home input[type="checkbox"]{
         display: none;
@@ -340,4 +341,47 @@
         display: flex;
         width: 100%;
     }
+}
+@media screen  and (max-width : 576px){
+
+    #home .respansive-bar #sidebar{
+          display: none;
+    }
+    #home .respansive-bar .nav-mover{
+        display: none;
+    }
+    #services .service-top {
+        width: 90%;
+    }
+    #services .service-bottom{
+        flex-direction: column;
+    }
+    #services .services .service-item{
+        width: 80%;
+        margin-bottom: 4rem;
+      
+   }
+   #contact .contact h{
+    margin-top: 20rem
+   }
+   #project .project-continer .cards .box {
+    flex-direction: column;
+    width: 90%;
+}
+   #project .project-continer .cards {
+    flex-direction: column;
+}
+    #about .col-left {
+        width: 70%;
+        margin: 50px auto 0;
+        height: 320px;
+    }
+    #footer .social-item, .text-h2 {
+    display: block;
+    margin-top: 75px;
+
+}
+#footer .social-icon {
+    margin-top: 0rem;
+}
 }
