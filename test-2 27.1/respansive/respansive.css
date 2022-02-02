@@ -7,6 +7,7 @@
 
 @media screen and (max-width : 992px) { 
     /*======navgation setting start=======*/
+  
     #home .navegation{
         display: none;
     }
@@ -331,6 +332,7 @@
             color: rgb(255, 255, 255);
         }
     }
+   
 }
 /*------ finish tablet and small device form 992 -----*/
 @media screen and (max-width:900px){
@@ -341,20 +343,69 @@
         display: flex;
         width: 100%;
     }
+   
 }
 @media screen  and (max-width : 576px){
 
-    #home .respansive-bar #sidebar{
-          display: none;
-    }
-    #home .respansive-bar .nav-mover{
-        display: none;
-    }
     #services .service-top {
         width: 90%;
     }
     #services .service-bottom{
         flex-direction: column;
+    }
+    #home .continer {
+        left: 10%;
+        top: 25%;
+        width: 75%;
+    }
+    #home .link{
+        position: absolute;
+        top: 450px;
+        right: 160px;
+
+    }
+    #home .continer h2:nth-child(2){
+       display: none;
+    }
+    #home .continer .mehdi{
+      display: none;
+    }
+    #home .continer .name{
+        font-size: 1.7rem;
+        margin: 30px 0; 
+        color: rgb(255, 60, 174);
+        animation: name 4s ease-in-out;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    #home .continer .text-1-1{
+        font-size: 1.7rem;
+        margin: 0; 
+        color: rgb(255, 60, 174);
+        overflow: hidden;
+        animation: ai 3s ease-in-out;
+        animation-delay: 6s;
+        white-space: nowrap;
+        left: -38px;
+    }
+    @keyframes ai{
+        0% { width: 0;}
+        100% { width: 95%;
+        }
+   
+    }
+    #home .continer h2 span{
+         animation: none;
+        }
+
+    #home .continer .mehid{
+        margin-left: 20px;
+    }
+    @keyframes name{
+        0% { width: 0;}
+        100% { width: 95%;
+        }
+   
     }
     #services .services .service-item{
         width: 80%;
@@ -384,4 +435,10 @@
 #footer .social-icon {
     margin-top: 0rem;
 }
+}
+@media screen  and (min-width : 576px){
+#home .continer .text-1-1{
+    display: none;
+}
+
 }
