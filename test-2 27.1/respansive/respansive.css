@@ -4,17 +4,14 @@
     }
 }
 /*------tablet and small device form 992-----*/
+
 @media screen and (max-width : 992px) { 
     /*======navgation setting start=======*/
     #home .navegation{
         display: none;
     }
-    #home{
+   #home{
         overflow: hidden;
-    }
-
-    #home{
-
         width: 100%;
     }
     #home .respansive-bar {
@@ -104,13 +101,12 @@
     #home #sidebar .menu-respansive a:hover{
         box-shadow: 10px 10px 20px #222;
     }
-
-    #home
     #home #sidebar .icon{
         display: flex;
         justify-content: center;
         align-items: center;
         margin-bottom: 50px;
+        
     }
     #home #sidebar .text-nav{
         text-align: center;
@@ -130,6 +126,7 @@
     #home #sidebar .icon a:hover{
       animation: color-bottom 1s infinite;
     }
+  
     
 /*======navgation setting end=======*/
     #home .continer{
@@ -160,7 +157,6 @@
         width: 40%;
         flex-direction: row;
         flex-wrap: wrap;
-        background-color: lawngreen;
     }
 /*======service setting end=======*/
 
@@ -169,7 +165,7 @@
         width: 100%;
     }
     #project .project-continer {
-        max-width: 80%;
+        max-width: 95%;
         margin: 0 auto;
         padding: 50px 0;
     }
@@ -242,16 +238,22 @@
         #about .col-left{
             width: 50%;
             margin: 0 auto;
-            height: 400px;
+            height: 320px;
         }
         #about .col-left img{
             object-fit: cover;
+            width: 100%;
+            height: 300px;
         }
 
         #about .col-right{
-            width: 72%;
-            margin: auto;
+            width: 100%;
+            height: 100%;
+            margin-top: 30px;
             text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
         #about .col-right p{
             font-size: 15px;
@@ -261,13 +263,13 @@
     /*======content setting start=======*/
     #contact{
         width: 100%;
+      
         height: 100%;
-        margin-top: -3%;
         margin-bottom: 15%;
     }
     #contact .contact-continer{
-        width: 80%;
-        margin: auto;
+        width: 100%;
+        text-align: center;
     }
     #contact .contact-continer .all-box{
         flex-wrap: wrap;
@@ -293,10 +295,9 @@
     }
 
       #contact .contact-continer .contact-box:hover{
-        width: 47%;
-        height: 190px;
-    }
-
+        width: 100%;
+        height: 210px;
+      }
         /*======content setting end=======*/
 
         #footer .social-item,.text-h2{
@@ -308,6 +309,8 @@
 
         #bottom .bottom-home{
             color: rgb(255, 255, 255);
+            margin-left: 92%;
+            font-size: 40px;
         }
 
     /*===animatiom setting====*/
@@ -328,5 +331,13 @@
         }
     }
 }
-
 /*------ finish tablet and small device form 992 -----*/
+@media screen and (max-width:900px){
+    #contact .contact-continer .all-box{
+        flex-direction: column;
+    }
+    #contact .contact-continer .contact-box{
+        display: flex;
+        width: 100%;
+    }
+}
