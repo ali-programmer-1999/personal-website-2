@@ -9,16 +9,12 @@
     #home .navegation{
         display: none;
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
-    /* #home{
-=======
     #home{
         overflow: hidden;
->>>>>>> 547b6c2b60b3440dd661a143d29d423a0599a080
-=======
+    }
+
     #home{
->>>>>>> parent of 2230509 (Responsive without  navegation)
+
         width: 100%;
     }
     #home .respansive-bar {
@@ -108,10 +104,8 @@
     #home #sidebar .menu-respansive a:hover{
         box-shadow: 10px 10px 20px #222;
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
-    #home */
-=======
+
+    #home
     #home #sidebar .icon{
         display: flex;
         justify-content: center;
@@ -138,11 +132,6 @@
     }
     
 /*======navgation setting end=======*/
->>>>>>> 547b6c2b60b3440dd661a143d29d423a0599a080
-=======
-    #home
->>>>>>> parent of 2230509 (Responsive without  navegation)
-
     #home .continer{
         left: 23%;
         top: 24%;
@@ -339,4 +328,5 @@
         }
     }
 }
+
 /*------ finish tablet and small device form 992 -----*/

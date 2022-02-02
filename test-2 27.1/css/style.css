@@ -298,20 +298,14 @@ body{
 
 
 /*=================== Start About section ===============*/
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
 #about{
     height: 100vh;
     width: 100%;
 }
->>>>>>> 547b6c2b60b3440dd661a143d29d423a0599a080
-=======
 #about{
     height: 100vh;
 }
->>>>>>> parent of 2230509 (Responsive without  navegation)
+
 #about .about{
     width: 1200px;
     margin: 0 auto;
