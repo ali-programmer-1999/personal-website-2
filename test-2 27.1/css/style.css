@@ -19,7 +19,6 @@ body{
     letter-spacing: .4rem;
     margin-top: 5rem;
     margin-bottom: 3rem;
-    text-align: center;
 }
 .section-title span {
     color: rgb(255, 60, 174);
@@ -36,12 +35,11 @@ body{
     border: 3px solid rgb(255, 60, 174);
     transition: all .5s ease-in-out;
 }
-
+/* پایان باتن */
 .btn:hover{
     background-color:rgb(255, 60, 174);
     color: rgb(0, 0, 0);
 }
-/* پایان باتن */
 #home{
     background-image: url(/image/home.jpg);
     height: 110vh;
@@ -112,7 +110,7 @@ body{
     width: 520px;
 }
 #home .continer h2{
-    font-size: 2.6rem;
+    font-size: 45px;
     color: transparent;
     position: relative;
     letter-spacing: 2px;
@@ -258,7 +256,7 @@ body{
 }
 #project .project-continer .cards .box .text h1{
     font-size: 40px;
-    color: rgb(214, 145, 185);
+    color: white;
     letter-spacing: 1px;
     padding-bottom: 5px;
 }
@@ -267,12 +265,10 @@ body{
     font-family: 'Francois One', sans-serif;
     color: rgb(230, 230, 230);
     padding-bottom: 6px;
-    font-weight: 400;
 }
 #project .project-continer .cards .box .text p{
     font-size: 18px;
     text-align: justify;
-    line-height: 2rem;
 }
 #project .project-continer .cards .box .image-project{
     height: 400px;
@@ -303,6 +299,7 @@ body{
 
 /*=================== Start About section ===============*/
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 #about{
@@ -310,13 +307,19 @@ body{
     width: 100%;
 }
 >>>>>>> 547b6c2b60b3440dd661a143d29d423a0599a080
+=======
+#about{
+    height: 100vh;
+}
+>>>>>>> parent of 2230509 (Responsive without  navegation)
 #about .about{
     width: 1200px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 50px 0;
-}
-#about .section-title{
-    text-align: center;
 }
 #about .about-bottom{
     display: flex;
@@ -327,7 +330,7 @@ body{
     width: 28%;
     height: 360px;
     position: relative;
-    border: 10px solid transparent;
+    border: 10px solid rgb(91, 131, 156);
 }
 #about .about .col-left::after{
     position: absolute;
@@ -369,7 +372,9 @@ body{
 /* End About section */
 /*=================== Start CONTACT section ===============*/
 
-
+#contact{
+    height: 80vh;
+}
 #contact .contact-continer{
     display: flex;
     flex-direction: column;
@@ -424,14 +429,13 @@ body{
 #footer .footer{
     max-width: 100%;
     text-align: center;
-    margin: 0 auto;
-    margin-top: 3rem;
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-items: center;
     align-items: center;
-    background-color: rgb(15, 67, 95);
+    background-image: rgb(15, 67, 95);
     font-family: 'Roboto', sans-serif;
 
 }
@@ -439,7 +443,6 @@ body{
     color: #fff;
     font-size: 2rem;
     letter-spacing: .2rem;
-    margin-top: 2rem;
 }
 #footer .brand span{
     color:rgb(255, 60, 174);
