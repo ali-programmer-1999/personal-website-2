@@ -297,9 +297,9 @@
     }
 
       #contact .contact-continer .contact-box:hover{
-        width: 100%;
         height: 210px;
-      }
+        margin: 0 auto;
+    }
         /*======content setting end=======*/
 
         #footer .social-item,.text-h2{
@@ -353,59 +353,75 @@
     #services .service-bottom{
         flex-direction: column;
     }
-    #home .continer {
+     #home .continer {
         left: 10%;
         top: 25%;
         width: 75%;
     }
     #home .link{
         position: absolute;
+        width: 100%;
         top: 450px;
-        right: 160px;
-
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-    #home .continer h2:nth-child(2){
-       display: none;
+    #home .continer{
+        position: absolute;
+        top: 40%;
+        left: 10%;
+        text-align: center;
+        width: 520px;
     }
-    #home .continer .mehdi{
-      display: none;
-    }
-    #home .continer .name{
-        font-size: 1.7rem;
-        margin: 30px 0; 
-        color: rgb(255, 60, 174);
-        animation: name 4s ease-in-out;
-        overflow: hidden;
-        white-space: nowrap;
-    }
-    #home .continer .text-1-1{
-        font-size: 1.7rem;
-        margin: 0; 
-        color: rgb(255, 60, 174);
-        overflow: hidden;
-        animation: ai 3s ease-in-out;
-        animation-delay: 6s;
-        white-space: nowrap;
-        left: -38px;
-    }
-    @keyframes ai{
-        0% { width: 0;}
-        100% { width: 95%;
-        }
-   
+    #home .continer h2{
+        font-size: 45px;
+        color: transparent;
+        position: relative;
+        letter-spacing: 2px;
+        margin-top: 10px;
+        margin-right: 50px;
+        display: inline-block;
+        animation: color-type 2s ease forwards;
+        animation-delay: 2s;
     }
     #home .continer h2 span{
-         animation: none;
-        }
-
-    #home .continer .mehid{
-        margin-left: 20px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 0;
+        background-color: transparent;
+        animation: typing 3s ease forwards;
+        animation-delay: 1s;
     }
-    @keyframes name{
-        0% { width: 0;}
-        100% { width: 95%;
-        }
-   
+    
+    /*=================animation setting===============*/
+    
+    #home .continer h2:nth-child(1){
+        animation-delay: 1.8s;
+    }
+    #home .continer h2:nth-child(2){
+        display: none;
+    }
+    #home .continer h2:nth-child(3){
+       display: none;
+    }
+    #home .continer h2:nth-child(4){
+        animation-delay: 7.5s;
+        margin-left: -5px;
+    }
+    
+    #home .continer h2:nth-child(1) span{
+        animation-delay: 0.5s;
+    }
+    #home .continer h2:nth-child(2) span{
+        display: none;
+    }
+    #home .continer h2:nth-child(3) span{
+         display: none;
+    }
+    #home .continer h2:nth-child(4) span{
+        animation-delay: 6s;
     }
     #services .services .service-item{
         width: 80%;
@@ -440,5 +456,7 @@
 #home .continer .text-1-1{
     display: none;
 }
-
+#home .link{
+    display: none;
+}
 }
